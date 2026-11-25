@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_customization">
+    <sys_app_customization action="INSERT_OR_UPDATE">
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:33</sys_created_on>
+        <sys_id>3ffbebc1ebf01710dd7dfab8bad0cdd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:33</sys_updated_on>
+        <vendor_app display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</vendor_app>
+        <vendor_app_version>3.0.2</vendor_app_version>
+        <version>1.0.0</version>
+        <war_version>glide-australia-02-11-2026__patch6w39-09-18-2026_09-23-2026_1520.zip</war_version>
+    </sys_app_customization>
+</record_update>

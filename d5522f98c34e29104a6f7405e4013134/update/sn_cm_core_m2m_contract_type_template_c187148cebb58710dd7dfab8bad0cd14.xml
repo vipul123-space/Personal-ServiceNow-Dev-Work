@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_cm_core_m2m_contract_type_template">
+    <sn_cm_core_m2m_contract_type_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <contract_type display_value="Non Disclosure Agreement">d69bb886539e211026b6ddeeff7b126f</contract_type>
+        <sys_class_name>sn_cm_core_m2m_contract_type_template</sys_class_name>
+        <sys_created_by>vishal_admin</sys_created_by>
+        <sys_created_on>2026-06-25 14:45:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c187148cebb58710dd7dfab8bad0cd14</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Non Disclosure Agreement.NDA TEST CMPro</sys_name>
+        <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
+        <sys_update_name>sn_cm_core_m2m_contract_type_template_c187148cebb58710dd7dfab8bad0cd14</sys_update_name>
+        <sys_updated_by>vishal_admin</sys_updated_by>
+        <sys_updated_on>2026-06-25 14:45:13</sys_updated_on>
+        <template display_value="NDA TEST CMPro">ee37584cebb58710dd7dfab8bad0cdd0</template>
+    </sn_cm_core_m2m_contract_type_template>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa90c0000001</claim_timestamp>
+        <metadata_update_name>sn_cm_core_m2m_contract_type_template_c187148cebb58710dd7dfab8bad0cd14</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>c40c2fc1ebf01710dd7dfab8bad0cd08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
+</record_update>

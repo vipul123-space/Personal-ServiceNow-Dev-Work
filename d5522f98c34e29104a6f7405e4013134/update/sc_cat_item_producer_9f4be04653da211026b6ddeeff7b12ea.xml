@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_producer">
+    <sc_cat_item_producer action="INSERT_OR_UPDATE">
+        <access_type>restricted</access_type>
+        <active>false</active>
+        <allow_edit>false</allow_edit>
+        <availability>on_desktop</availability>
+        <billable>false</billable>
+        <can_cancel>false</can_cancel>
+        <category display_value="Contract Requests">1110b952dba06010b18fdfea5e96196b</category>
+        <cc_render_type>system</cc_render_type>
+        <checked_out/>
+        <cost>0</cost>
+        <custom_cart/>
+        <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
+        <delivery_plan_script/>
+        <delivery_time>1970-01-03 00:00:00</delivery_time>
+        <description><![CDATA[<p>Request a standard Non-disclosure Agreement with third parties such as vendors, customers, and partners.</p>]]></description>
+        <display_price_property>non_zero</display_price_property>
+        <entitlement_script/>
+        <flow_designer_flow/>
+        <fulfillment_automation_level>unspecified</fulfillment_automation_level>
+        <group/>
+        <hide_sp>false</hide_sp>
+        <icon>022a850c474b5210a1274309536d4304</icon>
+        <ignore_price>true</ignore_price>
+        <image/>
+        <location/>
+        <make_item_non_conversational>false</make_item_non_conversational>
+        <mandatory_attachment>false</mandatory_attachment>
+        <meta/>
+        <mobile_hide_price>false</mobile_hide_price>
+        <mobile_picture/>
+        <mobile_picture_type>use_desktop_picture</mobile_picture_type>
+        <model/>
+        <name>Non-disclosure Agreement</name>
+        <no_attachment_v2>true</no_attachment_v2>
+        <no_cart>false</no_cart>
+        <no_cart_v2>false</no_cart_v2>
+        <no_delivery_time_v2>false</no_delivery_time_v2>
+        <no_order>false</no_order>
+        <no_order_now>false</no_order_now>
+        <no_proceed_checkout>false</no_proceed_checkout>
+        <no_quantity>false</no_quantity>
+        <no_quantity_v2>false</no_quantity_v2>
+        <no_save_as_draft>false</no_save_as_draft>
+        <no_search>false</no_search>
+        <no_wishlist_v2>false</no_wishlist_v2>
+        <omit_price>false</omit_price>
+        <order>0</order>
+        <ordered_item_link/>
+        <owner display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</owner>
+        <picture>e0fc068047039210a1274309536d4327</picture>
+        <post_insert_script><![CDATA[
+      
+
+      /**
+* This script is executed after the record is generated.
+* `current` Is the GlideRecord produced by Record Producer. Use `current.update()` to update the record
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></post_insert_script>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=9f4be04653da211026b6ddeeff7b12ea&amp;sysparm_preview=true", "summary");</preview>
+        <price>0</price>
+        <published_ref/>
+        <recurring_frequency/>
+        <redirect_url>generated_record</redirect_url>
+        <request_method/>
+        <roles/>
+        <save_options/>
+        <save_script><![CDATA[
+      
+
+      /**
+* This script is executed at every step save in Catalog Builder.
+* This script is executed before `Script` is executed.
+* `current` Is the GlideRecord produced by Record Producer.
+* To access the variables, use `producer.var1` where var1 is the name of the variable
+* To access the Record Producer use `cat_item`
+*/]]></save_script>
+        <sc_catalogs>4a2d2870b39313007a6de81816a8dc29</sc_catalogs>
+        <sc_ic_item_staging/>
+        <sc_ic_version/>
+        <sc_template/>
+        <script><![CDATA[                  var rpId = RP.getParameterValue('sysparm_id');
+var legalRequestWrapper = new sn_lg_ops.LegalRequestWrapper(current, rpId, producer.lg_subcategory);
+legalRequestWrapper.setRequestedFor(producer.requested_for);
+
+if (producer.company == 'not-listed' && !gs.nil(producer.new_company_legal_name))
+	current.company_legal_name = producer.new_company_legal_name;
+else
+	current.company_legal_name = current.company.name;
+
+legalRequestWrapper.setShortDescription(producer.contract_type.getDisplayValue()+ " for " + current.company_legal_name);
+
+current.country = producer.country;
+current.contract_value.setValue(producer.currency + ";" + producer.contract_value);]]></script>
+        <secondary_owners/>
+        <short_description>Submit a request for a standard Non-disclosure Agreement (NDA)</short_description>
+        <show_variable_help_on_load>false</show_variable_help_on_load>
+        <start_closed>false</start_closed>
+        <state/>
+        <sys_class_name>sc_cat_item_producer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:43:41</sys_created_on>
+        <sys_id>9f4be04653da211026b6ddeeff7b12ea</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Non-disclosure Agreement</sys_name>
+        <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
+        <sys_update_name>sc_cat_item_producer_9f4be04653da211026b6ddeeff7b12ea</sys_update_name>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-20 06:48:57</sys_updated_on>
+        <table_name>sn_lg_ops_contract_request</table_name>
+        <taxonomy_topic display_value="Contracts">af62e204c3203010069aec4b7d40dd0e</taxonomy_topic>
+        <template/>
+        <template_manager_roles/>
+        <turn_off_nowassist_conversation>false</turn_off_nowassist_conversation>
+        <type>item</type>
+        <use_sc_layout>true</use_sc_layout>
+        <vendor/>
+        <version>7</version>
+        <view/>
+        <visible_bundle>true</visible_bundle>
+        <visible_guide>true</visible_guide>
+        <visible_standalone>true</visible_standalone>
+        <workflow/>
+    </sc_cat_item_producer>
+    <sys_translated_text action="delete_multiple" query="documentkey=9f4be04653da211026b6ddeeff7b12ea"/>
+    <fx_price action="delete_multiple" query="id=9f4be04653da211026b6ddeeff7b12ea"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="GBP">GBP</currency>
+        <field>price</field>
+        <id>9f4be04653da211026b6ddeeff7b12ea</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-04-20 16:43:41</sys_created_on>
+        <sys_id>5b4ba88653da211026b6ddeeff7b12eb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>priyanka.vangapandu@snc</sys_updated_by>
+        <sys_updated_on>2024-11-20 10:47:57</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#c5c7c7</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>icon</file_name>
+        <hash>1c7402ecaccb42e86619825d9693527a96f282f213bc484ce7a62237a4174e7d</hash>
+        <image_height>140</image_height>
+        <image_width>140</image_width>
+        <size_bytes>3217</size_bytes>
+        <size_compressed>3240</size_compressed>
+        <state>available</state>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 09:11:12</sys_created_on>
+        <sys_id>022a850c474b5210a1274309536d4304</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>priyanka.vangapandu@snc</sys_updated_by>
+        <sys_updated_on>2025-01-07 09:11:12</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>9f4be04653da211026b6ddeeff7b12ea</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="icon" sys_id="022a850c474b5210a1274309536d4304">022a850c474b5210a1274309536d4304</sys_attachment>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 09:11:12</sys_created_on>
+        <sys_id>422a850c474b5210a1274309536d4304</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>4308</length>
+        <position>1</position>
+        <sys_attachment display_value="icon" sys_id="022a850c474b5210a1274309536d4304">022a850c474b5210a1274309536d4304</sys_attachment>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 09:11:12</sys_created_on>
+        <sys_id>c22a850c474b5210a1274309536d4304</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#c5c7c7</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <encryption_context/>
+        <file_name>picture</file_name>
+        <hash>1c7402ecaccb42e86619825d9693527a96f282f213bc484ce7a62237a4174e7d</hash>
+        <image_height>140</image_height>
+        <image_width>140</image_width>
+        <size_bytes>3217</size_bytes>
+        <size_compressed>3240</size_compressed>
+        <state>available</state>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 14:03:00</sys_created_on>
+        <sys_id>e0fc068047039210a1274309536d4327</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>priyanka.vangapandu@snc</sys_updated_by>
+        <sys_updated_on>2025-01-07 14:03:00</sys_updated_on>
+        <table_name>ZZ_YYsc_cat_item_producer</table_name>
+        <table_sys_id>9f4be04653da211026b6ddeeff7b12ea</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="picture" sys_id="e0fc068047039210a1274309536d4327">e0fc068047039210a1274309536d4327</sys_attachment>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 14:03:00</sys_created_on>
+        <sys_id>24fc068047039210a1274309536d4327</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AZEMbvOJUE5HDQoaCgAAAA1JSERSAAAAjAAAAIwIBgAAAK7AQT4AAAAJcEhZcwAACxMAAAsTAQCanBgAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAADCZJREFUeAHtnWtsFNcVgM+sG1wedgmBKuCEOLiEGCpjtxBCwGBTCMWtglsw1IqqGDUStOJlRB+/eEQJakpUA0UplapiKqGIOm0JKuQHCIzXMRhbeNPGBoOSDikGVBvHYh1HJmEn94y9m5nZ18x6Zvfe2fNJK/Ze784uns/nnvuYOwAEQRAEQRAEQRAEQRAEQRCE2EiQBEpKSsYPfv55FUjSYvYoBEXJhfSgjz3qMwD2NzY21oMLcFyY+cXF5UyQw+zpeEhj2C96V1Nj424QnAxwECZLDZNlH3v6dSBKpk6dCv/7+OPzIDCOCfPcwoU72T+/AUKL8NI40iQ9W1xcJQ01QyGysrJgzerVUFRUBN9hD7fzXHFx1J+J3Dx9DRyA/UJ2asuTJ0+GgwcOwORHHwUCQGHCsAgMIkrjAZvB6GLsBZEsQ380Woal2QmCYbswHkVZqS2XrVhBkQWG/2hcII3twig4zqJhTUUFEKD+0bhBGtuFMTZHT02fDsQQbpDGfmGImIguDQmTAkSWhoRJEaJKQ8KkEBGlIWFSjGjSkDAcIJI0jkwNOIl/YBBO1F+B1o4u6JS74Vb3PbV+yqRs9fHC4nyYMytHfS4SQWk2bt4Mt2/fDtXzNo1g++Tj/IULFW25yesFO0BRjp70wdF3feD/dDDu6zesngcbKuZBqjBOPpr9Pdy+cydMGoSXCUshmiSMImt/9RYcervZlCwIvrZsY20oAokCRprfvvYaZI0bp6vnpXniXhg84S/v/kdCJ34k700l09noODZPPErDfZMUKUpkjc2EF8sK1XwlmKtgPtN5oxsO1V0Kez2+5tjvKiFrTCYki0SbJC3Xr19Xmyd/f7+uPpXNE9cR5lBdc9jJf6EkH04drFJzFG1iOyN3EhNoJhx7vVKVSQseA/Mf0eAx0nArDJ5kzEO0oAiv/HxZzEiB0eeXLy1So48WNVkeMJf/8ARv0nArTGv7TV0Zo4mVXg9Kg/IEwWQZu+MiwpM03Apz4vxVXRllsZKDqHnOCn3T1NpxE0SFF2m4bpK0zHhiIlgF8x0tnXIPiAwP0ogjDEtqrWIc7RWtex2JVEtDc0kO8fCECbry5bY2sItUSkPCOEROTo6u3GajMEiqpCFhHCIvL09XPlZXp84T2UkqpCFhHGLO3Gdg9OjRoXI/G63duGmT8NKQMA6BJ3DtTyp1dSjLqooKeHXPHrjGhv3tIpY08xcs2Ao2wtVcEvZidrx5Rp0TMjsrnQilc/PYwF6xo2tmfO0dMDAwAO8c/yd4GxoglUiBQFFTU5MtcyPcRBh1CcOv31IH15yUBTnX8qH6WU52s7+RlaX+u7L8R/D88uWQUjIytoBNcCPM3toGx0XRgp+1483T4BQTHv5q/6Tnl38f1lZWwgRDVztZKIpSDjbBzRLNc60fQbLpvOHcyC9GmGz2uOf3q+W5LAnGR0vLJWj/4APo7e2FW11dkCRs2/2L2zW9L6/fDE7w5z8dCD13OqI9njMF2q926uqC4jjN9m3V4ATUS3IQjDIojZsgYRzm8SlT4JsTrU+c8goJkwS+9WSuayINCZMkMNLMnjUTMjNHgcgIdyGbyIwdMwa+W1Cg9pzuftIHn7KBvYHPBuCLLx6AKJAwKSB7uMstItQkEZYgYQhLkDCEJUgYwhIkDGEJbnpJeB2Rdm5HO+dD8AM3ESaR645GSuncaUBYgxthXvnFMt2lrU4TvAabsAY3wqhbcrxeqS6fdBIUZc7Mx9TPEm1bMx7gaqQXT2DN9h8AwS/USyIsQcIQliBhCEuQMIQlSBjCEiQMYQkSxu1IkixJ0jqwCRLG3ezPzMgoavJ6a8EmaImmS1EAdl9sbNwFNsONMLgl6t6/Jvf6apEIbjtr3H84ChFlqdlamJvhCWxRFKmEKZULQ5fQ9kkg+UAKHNn8+//UxjkuP9t9iHgjiWSD82Dev6yP97LdLGfZpa1gooxnouxUFIi3V4wcyPCsq37DVx/tBdzkMCLu0p1sTOxTHFEWjxQ4Z0IWJNfzIHDuwLaCqK/lRhinN/gRHYwucXZCjyoLe1oIFmBy1dRsLyyJ9DNhbrBFxMS0LHg91NLvFcOkRx5Rr8LsvnsXfO+3w5WrYVuoyQHFU1S9z9enraRutfiYlmUik6RyTTk8NmVy6JJdFGfZkkWwdEnYYjJMkKuMlSSM2FiSZVV5WdRru2c+PR0KC2bpKxVppfF1JIy4WMpZ8vOnx90IoHD2t3VlZajrrYOEERPLCa638WKkPEVHdtY4Y1WusYKEEY+Ee0OnzzbElGZw8D7Eg4QRC0s5y6IFz4YdIJY0H/73hqFGCtvbl+aSxCGhBHcUe5w5q99Y+vRwOZ8lukEGBwfhUstlw0cq5w0VFGEEYb9RFiTDoxyGCOMsP1yxNJTgYu8nQpdZF2lQlr8fPwX3/Pq717JxmH3G91GE4Z8jTJawofoD22YfNm7YjLL8eGUZZGfrk9eZw5EkUqQZvH8fOq5cg567vbqfBZikbNBONn4uCcM3KEuVsXJYFl19NFmCRJOmgfWewmG5ixIe0RBqkvjFNlmCRGue9Ei+gCKVGqcEgpAwfGK7LEFiSyPJsWRBSBj+cEyWIF23It3kK74sCK244wgJAkd8f6uuMtbbKcvps17WO7pm/OSgLHK893MTYQ693UyycC4LQivuOEAUWRBacZdiRJJl6PvaDK24s4TjCa6dsiDUS0odvkiy/GFrwU5eZUFImNSAs8ClxkqUJSDBLm0dT7IgJEzyUWVh0UU33iGCLAgJk1yElgUhYZKH8LIgJExycIUsCAnjPI7L0tzSlhRZEBLGWZIiS3PY0kpnZEFIGOdwnSwICeMMrpQFEW6JZmvHTXUfmVv/96s7GszInajeO4AjXCsLIoQwOJN99KQPjr7ri7gEAsUpnTNN3Q7D7AQmHrNT7obW9q5QHb53zqyckUyCymBSlszMTOFkQbgWJp4oodexn504f4VFny511jvWHVHMHBMjFh5nRu4ksIAMLpdF/TSwGTtmq82KEg28D9KLZeFXjWJzVv3GSdPHxP3kTEYtGYZkkbWVsWSZNHECWIEHWdRPBJsZiTBmRBlqfvLYScxScxmMKpH2xsOTjNJkjR3FjnUfzrV8pAqTCHHEkSFNZFE/FWwmUWHirelFUVAAVQLDXm+4vPNQXTNYBY+JMgSPh/JFkyrKLpYypJEsCDc5TLQ1vbFECbJh9Tz1npE7/njGdHODx4t0C79OuYc1W/8Ki1pY3nukQSuMDGkmC8KNMMY1vWZE0YKJ7jGWpGKkwQQ4GpjQbqh4JmpXHLvppw5WsWN0sGNd0omj+R4ypKEs6jcAm0m4SRo+QSiOFVEiMZTb3FSjBeYvCIqQyJjN0VM+9YHfCyMSizAypEaWPiZLUSplUb8F2IzL1/TKkDpZMLL4IMXQ1IB5ZEhzWRASxhwykCwqtN1HfGSIJEt1wZYA6GVBlpYWu1YWhCJMfMJkOVhd8BKTJWx3pmVLiiFv2hNgBZFkQUiY2NRGkuUBqze+EGXJf/opsIJosiAkTGz2awvpLgtivzCGv8jLbW0gKH0suuhO3IMIOUs6yYLYLoykKLr/cJu4wui2HK3ZWojT37naunSTBbFdGEXR7+16rK4Obt+5AwJSry1kQKBEW57Gktt0kwWxXZjMhx6qZf+EFhH19/fDxk2bRJSmXlfySIu1RbyFjBXcIAtiuzD19fV9YLhPMsqyqqICXt2zB65dvw4CEJa/sMhZoi3nWBAmsiy4cbJYsiC2zyUFYXNKOE6xBUREUd658N575cEi5i8eKRBKxnCX7fU/+6mpQ/n+3R5xL9yAoqyr3hf/Lq684Vi3+kJj41a8dzKISb22YMxfcnLMRRfcmt1NsiCOjsPgvZMVbJ4MXW3eYT29el1FAvkLynLasOs2IrIsiOMDdxe93toLXu+TylBec1wAefqamppGlL+4VRbEsRzGLcTLX/AOIN09veD3+6Gn5y50d/eqd2o14gZZEJqtjgPmL9oVYZmjMtUbPKAY9/r9pu5i5hZZEBImHpi/KF8pc49Fko6rftNvd5MsCE0+xsGYv5gHB+XcJQtCEWbEqJfGypIEvgcB6X0YWnDlS/VibacgYeIQUDzrPJJSw56OhzQSgyAIgiAIwk18CTzHUHm1aFWiAAAAAElFTkSuQmCCBUR5o5EMAAA=</data>
+        <length>4308</length>
+        <position>1</position>
+        <sys_attachment display_value="picture" sys_id="e0fc068047039210a1274309536d4327">e0fc068047039210a1274309536d4327</sys_attachment>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 14:03:00</sys_created_on>
+        <sys_id>a4fc068047039210a1274309536d4327</sys_id>
+    </sys_attachment_doc>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa87f0000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_producer_9f4be04653da211026b6ddeeff7b12ea</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>4c0cebc1ebf01710dd7dfab8bad0cde7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>9f4be04653da211026b6ddeeff7b12ea</id>
+        <sys_created_by>priyanka.vangapandu@snc</sys_created_by>
+        <sys_created_on>2025-01-07 09:11:00</sys_created_on>
+        <sys_id>df1ac50c474b5210a1274309536d4384</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>priyanka.vangapandu@snc</sys_updated_by>
+        <sys_updated_on>2025-01-07 09:11:00</sys_updated_on>
+        <table>sc_cat_item_producer</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

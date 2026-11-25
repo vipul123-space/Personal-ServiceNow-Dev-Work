@@ -185,4 +185,18 @@ current.contract_value.setValue(producer.currency + ";" + producer.contract_valu
         <sys_created_on>2026-07-02 21:03:29</sys_created_on>
         <sys_id>a2417d56ebb1cb508608fc7acad0cd5d</sys_id>
     </sys_attachment_doc>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa8c60000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_producer_85413956ebb1cb508608fc7acad0cdc7</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>440cebc1ebf01710dd7dfab8bad0cdf1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
 </record_update>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>sn_lg_ops_contract_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="sn_lg_ops_contract_request">lg_category=4133f309255e2110f87727062d8cb642^variables.2a3b5b7800d22110f87778b8efae8e8cISNOTEMPTY^NQlg_category=c193f9365312211026b6ddeeff7b1292^variables.374be88653da211026b6ddeeff7b1232ISNOTEMPTY^NQoptionsLIKEinitialize_legal_contract^NQlg_category=8e82715aebb1cb508608fc7acad0cdb4^EQ<item display_table="sn_lg_ops_category" display_value="Third-party Contract" endquery="false" field="lg_category" goto="false" newquery="false" operator="=" or="false" value="4133f309255e2110f87727062d8cb642"/>
+            <item endquery="false" field="variables.2a3b5b7800d22110f87778b8efae8e8c" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item display_table="sn_lg_ops_category" display_value="Non-disclosure Agreement" endquery="false" field="lg_category" goto="false" newquery="true" operator="=" or="false" value="c193f9365312211026b6ddeeff7b1292"/>
+            <item endquery="false" field="variables.374be88653da211026b6ddeeff7b1232" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="options" goto="false" newquery="true" operator="LIKE" or="false" value="initialize_legal_contract"/>
+            <item display_table="sn_lg_ops_category" display_value="Demo Non-disclosure Agreement" endquery="false" field="lg_category" goto="false" newquery="true" operator="=" or="false" value="8e82715aebb1cb508608fc7acad0cdb4"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Initializing Legal Contract </name>
+        <order>900</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	try {
+		var inputs = {};
+		inputs['legal_request'] = current; 
+		sn_fd.FlowAPI.getRunner().action('sn_lg_cnt.initialize_legal_contract_generation').inForeground().withInputs(inputs).run();
+	} catch (ex) {
+		var message = ex.getMessage();
+		gs.error(message);
+	}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-05-15 04:20:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2bdd2a71e9722110fa9b6cf62841c264</sys_id>
+        <sys_mod_count>91</sys_mod_count>
+        <sys_name>Initializing Legal Contract </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
+        <sys_update_name>sys_script_2bdd2a71e9722110fa9b6cf62841c264</sys_update_name>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 21:13:12</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2bdd2a71e9722110fa9b6cf62841c264"/>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa8f40000001</claim_timestamp>
+        <metadata_update_name>sys_script_2bdd2a71e9722110fa9b6cf62841c264</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>8c0c2fc1ebf01710dd7dfab8bad0cd04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
+</record_update>

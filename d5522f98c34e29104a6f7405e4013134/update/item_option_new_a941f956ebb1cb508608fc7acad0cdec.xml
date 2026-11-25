@@ -28,6 +28,7 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <hidden>false</hidden>
+        <hide_on_grid>false</hide_on_grid>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -39,6 +40,7 @@
         <lookup_table/>
         <lookup_unique>false</lookup_unique>
         <lookup_value/>
+        <lux_widget/>
         <macro/>
         <macroponent/>
         <mandatory>false</mandatory>
@@ -46,6 +48,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>signature_type</name>
+        <no_auto_populate_also_request_for>false</no_auto_populate_also_request_for>
         <not_available_conversation>false</not_available_conversation>
         <order>700</order>
         <post_insert_script/>
@@ -146,4 +149,18 @@
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa8fb0000001</claim_timestamp>
+        <metadata_update_name>item_option_new_a941f956ebb1cb508608fc7acad0cdec</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>400c2fc1ebf01710dd7dfab8bad0cd06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
 </record_update>

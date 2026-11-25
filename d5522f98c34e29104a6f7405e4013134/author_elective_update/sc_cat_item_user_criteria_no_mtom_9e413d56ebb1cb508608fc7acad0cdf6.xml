@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Copy of Non-disclosure Agreement">85413956ebb1cb508608fc7acad0cdc7</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-07-02 21:03:27</sys_created_on>
+        <sys_id>9e413d56ebb1cb508608fc7acad0cdf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Non-disclosure Agreement.SNC External</sys_name>
+        <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6</sys_update_name>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 21:03:27</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</application>
+        <file_path/>
+        <instance_id>3c751ec8db88469492f5684e139619b8</instance_id>
+        <instance_name>kloveslabincdemo01</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Copy of Non-disclosure Agreement">85413956ebb1cb508608fc7acad0cdc7</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>vipul_admin</sys_created_by><sys_created_on>2026-07-02 21:03:27</sys_created_on><sys_id>9e413d56ebb1cb508608fc7acad0cdf6</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Copy of Non-disclosure Agreement.SNC External</sys_name><sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package><sys_policy/><sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6</sys_update_name><sys_updated_by>vipul_admin</sys_updated_by><sys_updated_on>2026-07-02 21:03:27</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>-1583150913</payload_hash>
+        <record_name>Copy of Non-disclosure Agreement.SNC External</record_name>
+        <reverted_from/>
+        <source>7a02df73eb2d4710dd7dfab8bad0cdab</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-07-02 21:03:27</sys_created_on>
+        <sys_id>12413d56ebb1cb508608fc7acad0cdfc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19f24a4cce40000001</sys_recorded_at>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 21:03:27</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>1e413d5608b1cb506b870544fa51a8fa</update_guid>
+        <update_guid_history>1e413d5608b1cb506b870544fa51a8fa:-1583150913</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of Non-disclosure Agreement.SNC External">15127152ebf9cb50dd7dfab8bad0cd9c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-07-02 21:06:57</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0259fc62103b43fc808a213dc3c3aa90</sys_id>
+        <sys_metadata>9e413d56ebb1cb508608fc7acad0cdf6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Non-disclosure Agreement.SNC External</sys_name>
+        <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
+        <sys_scope_delete display_value="">05afdfd188194c1a80a93e74a820bf24</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6">12413d56ebb1cb508608fc7acad0cdfc</sys_update_version>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-07-02 21:06:57</sys_updated_on>
+    </sys_metadata_delete>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</claim_owner_scope>
+        <claim_timestamp>1a2128fa8660000001</claim_timestamp>
+        <metadata_update_name>sc_cat_item_user_criteria_no_mtom_9e413d56ebb1cb508608fc7acad0cdf6</metadata_update_name>
+        <previous_claim_app_version>3.0.2</previous_claim_app_version>
+        <previous_claim_name>Contract Management Pro for Legal Service Delivery</previous_claim_name>
+        <previous_claim_scope>d5522f98c34e29104a6f7405e4013134</previous_claim_scope>
+        <sys_created_by>vipul_admin</sys_created_by>
+        <sys_created_on>2026-11-25 11:55:34</sys_created_on>
+        <sys_id>040cebc1ebf01710dd7dfab8bad0cde4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vipul_admin</sys_updated_by>
+        <sys_updated_on>2026-11-25 11:55:34</sys_updated_on>
+    </sys_claim>
+</record_update>
