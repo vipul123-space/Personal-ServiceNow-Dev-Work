@@ -7,6 +7,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category display_value="Contract Requests">1110b952dba06010b18fdfea5e96196b</category>
+        <cc_render_type>system</cc_render_type>
         <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
@@ -80,20 +81,21 @@
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
-        <script><![CDATA[                  var rpId = RP.getParameterValue('sysparm_id');
+        <script><![CDATA[var rpId = RP.getParameterValue('sysparm_id');
 var legalRequestWrapper = new sn_lg_ops.LegalRequestWrapper(current, rpId, producer.lg_subcategory);
 legalRequestWrapper.setRequestedFor(producer.requested_for);
 
 if (producer.company == 'not-listed' && !gs.nil(producer.new_company_legal_name))
-	current.company_legal_name = producer.new_company_legal_name;
+    current.company_legal_name = producer.new_company_legal_name;
 else
-	current.company_legal_name = current.company.name;
+    current.company_legal_name = current.company.name;
 
-legalRequestWrapper.setShortDescription(producer.contract_type.getDisplayValue()+ " for " + current.company_legal_name);
+legalRequestWrapper.setShortDescription(producer.contract_type.getDisplayValue() + " for " + current.company_legal_name);
 
 current.country = producer.country;
 current.contract_value.setValue(producer.currency + ";" + producer.contract_value);]]></script>
-        <short_description>Submit a request for a standard Non-disclosure Agreement (NDA)</short_description>
+        <secondary_owners/>
+        <short_description>Submit a request for a standard Non-disclosure Agreement (NDA) for demo</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
@@ -101,14 +103,14 @@ current.contract_value.setValue(producer.currency + ";" + producer.contract_valu
         <sys_created_by>vipul_admin</sys_created_by>
         <sys_created_on>2026-07-02 21:03:22</sys_created_on>
         <sys_id>85413956ebb1cb508608fc7acad0cdc7</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Demo Non-disclosure Agreement</sys_name>
         <sys_package display_value="Contract Management Pro for Legal Service Delivery" source="sn_lg_cnt">d5522f98c34e29104a6f7405e4013134</sys_package>
         <sys_policy/>
         <sys_scope display_value="Contract Management Pro for Legal Service Delivery">d5522f98c34e29104a6f7405e4013134</sys_scope>
         <sys_update_name>sc_cat_item_producer_85413956ebb1cb508608fc7acad0cdc7</sys_update_name>
         <sys_updated_by>vipul_admin</sys_updated_by>
-        <sys_updated_on>2026-07-02 21:07:02</sys_updated_on>
+        <sys_updated_on>2026-11-25 11:08:37</sys_updated_on>
         <table_name>sn_lg_ops_contract_request</table_name>
         <taxonomy_topic display_value="Contracts">af62e204c3203010069aec4b7d40dd0e</taxonomy_topic>
         <template/>
@@ -117,7 +119,7 @@ current.contract_value.setValue(producer.currency + ";" + producer.contract_valu
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>10</version>
+        <version>12</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
